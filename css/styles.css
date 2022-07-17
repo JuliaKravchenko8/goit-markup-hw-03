@@ -29,6 +29,25 @@ footer {
     background: var(--dark-background);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .link-logo {
     color: var(--link-color);
     text-decoration: none;
@@ -81,8 +100,10 @@ footer {
 }
 
 .hero {
+    text-align: center;
     background: var(--dark-background);
-    width: 1600px;
+    width: 1230px;
+    padding-left: 15px;
 }
 
 .hero-title {
@@ -93,6 +114,7 @@ footer {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .visually-hidden {
@@ -109,6 +131,9 @@ footer {
 }
 
 .hero-button {
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
     color: var(--white-text-color);
     cursor: pointer;
     font-family: inherit;
@@ -118,7 +143,6 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
