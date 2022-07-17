@@ -19,33 +19,81 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     color: var(--primary-text-color);
     background-color: var(--primary-background);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
 footer {
     background: var(--dark-background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 p {
-
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+.header {
+    display: block;
+    max-width: 1600px;
+    border: 1px solid yellow;
+}
 .section {
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
+    border: 1px solid tomato;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid green;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav,
+.main-site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-item {
+    margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+    margin-right: 0;
+}
+
+.logo {
+    margin-right: 93px;
+}
+
+.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .link-logo {
@@ -53,33 +101,33 @@ p {
     text-decoration: none;
 }
 
-.footer-logo,
-.logo {
-    text-decoration: none;
+.logo,
+.footer-logo {
     color: var(--primary-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .link,
 .link-footer {
-    text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .link.current {
     color: var(--link-color);
 }
 
-.address-nav:hover, 
-.address-nav:focus,
+.address-nav-link:hover, 
+.address-nav-link:focus,
 .link:hover,
 .link:focus,
 .footer-nav:hover,
@@ -89,24 +137,35 @@ p {
     color: var(--link-color);
 }
 
-.address-nav,
+.address-nav-link,
 .footer-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--secondary-text-color);
-    text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.address-nav-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.address-nav-item:not(last-child) {
+    margin-right: 50px;
 }
 
 .hero {
-    text-align: center;
     background: var(--dark-background);
-    width: 1230px;
-    padding-left: 15px;
+    text-align: center;
 }
 
 .hero-title {
+    margin: 0 auto 30px;
+    width: 696px;
     color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
@@ -114,7 +173,6 @@ p {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .visually-hidden {
@@ -156,6 +214,7 @@ p {
 }
 
 .feature-title {
+    padding-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -174,14 +233,22 @@ p {
 
 .work-title,
 .team-title {
+    padding-bottom: 50px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.work-list {
+    padding-top: 0;
 }
 
 .team-name {
+    padding-bottom: 10px;
+    padding-top: 30px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -199,6 +266,7 @@ p {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 .team-card {
@@ -211,12 +279,14 @@ p {
     background: var(--secondary-background);
 }
 
-ul {
-    list-style: none;
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
 .footer-logo {
+    display: inline-block;
     color: var(--white-text-color);
+    padding-bottom: 20px;
 }
 
 .footer-address {
