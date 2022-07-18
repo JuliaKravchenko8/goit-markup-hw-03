@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <nav class="site-nav">
           <a lang="en" class="logo" href="index.html"><span class="link-logo">Web</span>Studio</a>
           <ul class="main-site-nav">
-            <li class="site-nav-item"><a class="link current" href="./index.html">Студия</a></li>
-            <li class="site-nav-item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="site-nav-item"><a class="link" href="./index.html">Студия</a></li>
+            <li class="site-nav-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
             <li class="site-nav-item"><a class="link" href="">Контакты</a></li>
           </ul>
         </nav>  
@@ -32,18 +32,18 @@
     </header>
 
     <main>
-      <div class="container">
-        <section class="portfolio section">
+      <section class="portfolio section">
+        <div class="container">  
           <h1 class="visually-hidden">Страница портфолио</h1>
-          <ul>
-            <li><button class="portfolio-button" type="button">Все</button></li>
-            <li><button class="portfolio-button" type="button">Веб-сайты</button></li>
-            <li><button class="portfolio-button" type="button">Приложения</button></li>
-            <li><button class="portfolio-button" type="button">Дизайн</button></li>
-            <li><button class="portfolio-button" type="button">Маркетинг</button></li>
+          <ul class="portfolio-btn-list">
+            <li class="portfolio-btn-item"><button class="portfolio-button" type="button">Все</button></li>
+            <li class="portfolio-btn-item"><button class="portfolio-button" type="button">Веб-сайты</button></li>
+            <li class="portfolio-btn-item"><button class="portfolio-button" type="button">Приложения</button></li>
+            <li class="portfolio-btn-item"><button class="portfolio-button" type="button">Дизайн</button></li>
+            <li class="portfolio-btn-item"><button class="portfolio-button" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="portfolio-card">
-            <li>
+          <ul class="portfolio-card-list">
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img1.jpg" alt="Страница веб-сайта Технокряк" width="370" />
                 <div class="portfolio-descr">
@@ -52,7 +52,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img2.jpg" alt="Два мужчины играют в баскетбол" width="370" />
                 <div class="portfolio-descr">
@@ -61,7 +61,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img3.jpg" alt="Логотип приложения для ресторана" width="370" />
                 <div class="portfolio-descr">
@@ -70,7 +70,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img4.jpg" alt="Наушники" width="370" />
                 <div class="portfolio-descr">
@@ -79,7 +79,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img5.jpg" alt="Две коробки" width="370" />
                 <div class="portfolio-descr">
@@ -88,7 +88,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img6.jpg" alt="Монитор компьютера" width="370" />
                 <div class="portfolio-descr">
@@ -97,7 +97,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img7.jpg" alt="Роскрытая книга" width="370" />
                 <div class="portfolio-descr">
@@ -106,7 +106,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img src="./portfolio-images/img8.jpg" alt="Бирка на шнурке" width="370" />
                 <div class="portfolio-descr">
@@ -115,7 +115,7 @@
                 </div>
               </a>
             </li>
-            <li>
+            <li class="portfolio-card-item">
               <a class="portfolio-link" href="">
                 <img
                   src="./portfolio-images/img9.jpg"
@@ -129,12 +129,12 @@
               </a>
             </li>
           </ul>
-        </section>  
-      </div>
+        </div>
+      </section>  
     </main>
 
     <!--Футер-->
-    <footer>
+    <footer class="footer">
       <div class="container">
         <a lang="en" class="footer-logo" href="index.html"><span class="link-logo">Web</span>Studio</a>
         <address class="footer-address">
