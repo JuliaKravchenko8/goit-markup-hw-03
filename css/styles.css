@@ -46,6 +46,12 @@ p {
     margin-bottom: 0;
 }
 
+img {
+    display:block; 
+    max-width:100%; 
+    height:auto;
+}
+
 .header {
     display: block;
     max-width: 1600px;
@@ -156,6 +162,8 @@ p {
 }
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background: var(--dark-background);
     text-align: center;
 }
@@ -220,7 +228,7 @@ p {
 }
 
 .feature-title {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -239,7 +247,7 @@ p {
 
 .work-title,
 .team-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -268,8 +276,8 @@ p {
 }
 
 .team-name {
-    padding-bottom: 10px;
-    padding-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -309,7 +317,7 @@ p {
 .footer-logo {
     display: inline-block;
     color: var(--white-text-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-address {
@@ -375,6 +383,7 @@ p {
 }
 
 .portfolio-link {
+    display: block;
     text-decoration: none;
     background: var(--secondary-background);
 }
@@ -401,6 +410,10 @@ p {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-nav {
